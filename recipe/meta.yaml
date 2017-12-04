@@ -1,6 +1,6 @@
 {% set name = "clickhouse-sqlalchemy" %}
-{% set version = "0.0.4" %}
-{% set sha256 = "73f0d4aa7038821be3cdc9cf01e09dad8494fb749c464e591f44480bdaa1c669" %}
+{% set version = "0.0.5" %}
+{% set sha256 = "169c7ea825dfe64b0b90d0c00ee8e5815e49cae953f168a265989d9634b9dd71" %}
 
 package:
   name: {{ name|lower }}
