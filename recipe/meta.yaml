@@ -1,6 +1,6 @@
 {% set name = "clickhouse-sqlalchemy" %}
-{% set version = "0.0.5" %}
-{% set sha256 = "169c7ea825dfe64b0b90d0c00ee8e5815e49cae953f168a265989d9634b9dd71" %}
+{% set version = "0.0.6" %}
+{% set sha256 = "2b0277ca148be430ddd480afe4d14de3ae32f59457ac87ab52db38a0d548a63f" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
