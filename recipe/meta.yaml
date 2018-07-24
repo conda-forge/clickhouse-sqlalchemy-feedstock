@@ -1,27 +1,25 @@
-{% set name = "clickhouse-sqlalchemy" %}
 {% set version = "0.0.6" %}
-{% set sha256 = "2b0277ca148be430ddd480afe4d14de3ae32f59457ac87ab52db38a0d548a63f" %}
 
 package:
-  name: {{ name|lower }}
+  name: clickhouse-sqlalchemy
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/c/clickhouse-sqlalchemy/clickhouse-sqlalchemy-{{ version }}.tar.gz
+  sha256: 2b0277ca148be430ddd480afe4d14de3ae32f59457ac87ab52db38a0d548a63f
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
+  entry_points:
+    - sqlalchemy.dialects = dialects
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - sqlalchemy
     - clickhouse-driver >=0.0.8
-
   run:
     - python
     - setuptools
