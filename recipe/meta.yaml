@@ -9,11 +9,8 @@ source:
   sha256: 2b0277ca148be430ddd480afe4d14de3ae32f59457ac87ab52db38a0d548a63f
 
 build:
-  noarch: python
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
-  entry_points:
-    - sqlalchemy.dialects = dialects
 
 requirements:
   build:
