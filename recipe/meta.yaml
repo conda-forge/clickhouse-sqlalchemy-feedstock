@@ -18,6 +18,11 @@ requirements:
     - python
     - pip
 
+  build:
+    - setuptools
+    - sqlalchemy
+    - clickhouse-driver >=0.0.8
+
   run:
     - python
     - six
