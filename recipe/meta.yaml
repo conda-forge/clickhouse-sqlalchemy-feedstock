@@ -14,14 +14,14 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  host:
-    - python
-    - pip
-
   build:
     - setuptools
     - sqlalchemy
     - clickhouse-driver >=0.0.8
+
+  host:
+    - python
+    - pip
 
   run:
     - python
