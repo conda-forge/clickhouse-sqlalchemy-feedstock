@@ -9,18 +9,12 @@ source:
   sha256: c976e13c4d33c3ef701f9a35d1974271bd3b6d04ef3c5c43d81814d0a890613c
 
 build:
-  number: 2
+  number: 3
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
-    - setuptools
-    - sqlalchemy
-    - clickhouse-driver >=0.0.8
-
   host:
-    - python
     - pip
 
   run:
@@ -28,7 +22,7 @@ requirements:
     - six
     - sqlalchemy
     - requests
-    - clickhouse-driver >=0.0.8
+    - clickhouse-driver >=0.0.14
 
 test:
   imports:
