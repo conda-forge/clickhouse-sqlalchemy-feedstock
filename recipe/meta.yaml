@@ -11,7 +11,7 @@ source:
 build:
   number: 3
   noarch: python
-  script: "pip -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
