@@ -37,6 +37,7 @@ about:
   home: https://github.com/xzkostyan/clickhouse-sqlalchemy
   license: MIT
   summary: 'Simple ClickHouse SQLAlchemy Dialect'
+  license_file: LICENSE
   license_family: MIT
 
 extra:
