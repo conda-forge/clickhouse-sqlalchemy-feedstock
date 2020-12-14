@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: clickhouse-sqlalchemy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/clickhouse-sqlalchemy/clickhouse-sqlalchemy-{{ version }}.tar.gz
-  sha256: 4b01521d2ea8132b117288cf0ef4136dec451a272b20615ab6fdfb5b004d578d
+  sha256: d09a69fd684b8cbefcdd1c91f4fd6b5fd7a36872aeb7f0e9ca24afafdddd2384
 
 build:
   number: 0
