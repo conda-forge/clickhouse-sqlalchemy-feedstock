@@ -1,11 +1,11 @@
-About clickhouse-sqlalchemy
-===========================
+About clickhouse-sqlalchemy-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/clickhouse-sqlalchemy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/xzkostyan/clickhouse-sqlalchemy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/clickhouse-sqlalchemy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simple ClickHouse SQLAlchemy Dialect
 
