@@ -19,7 +19,7 @@ requirements:
 
   run:
     - python >=3.6,<4
-    - sqlalchemy >=1.4,<1.5
+    - sqlalchemy >=2.0,<2.1
     - requests
     - clickhouse-driver >=0.1.2
 
